@@ -2,13 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Run Seek 4.0</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="page_type" content="np-template-header-footer-from-plugin" />
 
+  <!-- SEO Tags -->
+  <title>Code Run Seek 4.0</title>
+  <meta name="description"
+    content="IEEE-IAS is an eminent technical chapter at VIT. The chapter's vision lies in linking research to practice to bring about a new industrial revolution amongst the students." />
+  <meta name="keywords"
+    content="IEEE IAS, VIT, Vellore Institute of Technology, Vellore, Events, Blogs, Board, Linking, Research, Practice" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -16,10 +36,55 @@
   <link href="css\style.css" rel="stylesheet" type="text/css" />
   <link href="css\about_us.css" rel="stylesheet" type="text/css" />
   <link href="css\sponsors.css" rel="stylesheet" type="text/css" />
-
+  <link href="css\timer.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+
+  <!-- Timer Begins -->
+  <div id="time">
+    <div class="circle" style="--clr:#ff2972;">
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="dd"></circle>
+      </svg>
+      <div id="days">
+        00
+      </div>
+    </div>
+
+    <div class="circle" style="--clr:#ff2972;">
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="hh"></circle>
+      </svg>
+      <div id="hours">
+        00
+      </div>
+    </div>
+
+    <div class="circle" style="--clr:#ff2972;">
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="mm"></circle>
+      </svg>
+      <div id="minutes">
+        00
+      </div>
+    </div>
+
+    <div class="circle" style="--clr:#ff2972;">
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="ss"></circle>
+      </svg>
+      <div id="seconds">
+        00
+      </div>
+    </div>
+  </div>
+  <!-- Timer Ends -->
+
   <!-- About us section Begins -->
   <div class="about-us">
     <div id="t">
@@ -110,5 +175,6 @@
   </div>
   <!-- Sponsorship section Ends -->
 </body>
+<script src="js/timer.js"></script>
 
 </html>
