@@ -14,10 +14,6 @@
     position: absolute;
 }
 
-.home .toggle1 {
-    transform: translateX(0);
-}
-
 .home li {
     list-style: none;
     margin: 20% 0;

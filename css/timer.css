@@ -46,3 +46,33 @@
     stroke: var(--clr);
     stroke-dasharray: 440;
 }
+
+@media (max-width: 878px){
+    #time .circle {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 654px){
+    #time .circle {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 752px){
+    #time {
+        transform: scale(0.8);
+    }
+    #time .circle {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 500px){
+    #time {
+        transform: scale(0.6);
+    }
+    #time .circle {
+        transform: scale(0.8);
+    }
+}
