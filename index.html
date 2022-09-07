@@ -31,9 +31,14 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Custom Style -->
   <link href="css\style.css" rel="stylesheet" type="text/css" />
+  <link href="css\background.css" rel="stylesheet" type="text/css" />
+  <link href="css\home.css" rel="stylesheet" type="text/css" />
   <link href="css\about_us.css" rel="stylesheet" type="text/css" />
   <link href="css\sponsors.css" rel="stylesheet" type="text/css" />
   <link href="css\timer.css" rel="stylesheet" type="text/css" />
@@ -41,44 +46,102 @@
 
 <body>
 
+  <!-- Background Begins -->
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <!-- Background Ends -->
+
+  <!-- Navbar Begins -->
+  <nav class="home">
+    <i class="icon fa-solid fa-bars"></i>
+    <div class="sidebar">
+      <ul>
+        <li id=""><a href="/">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Round 1</a></li>
+        <li><a href="#">Timeline</a></li>
+        <li><a href="#">Prizes</a></li>
+        <li><a href="#">Sponsors</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <!-- Homepage Begins -->
+  <div class="home">
+    <div class="logo">
+      <div class="ias">
+        <img src="./images/chapters/iaslogo.png" alt="" />
+      </div>
+      <div class="wie">
+        <img src="./images/chapters/wielogo.png" alt="" />
+      </div>
+    </div>
+    <main class="main--box">
+      <div class="content">
+        <h1>
+          <span class="sub-content-text">CODE </span>
+          <span class="sub-content-text">RUN </span>
+          <span class="sub-content-text">SEEK </span>
+        </h1>
+      </div>
+      <div class="sub-content">
+        <p class="content-code">
+          <span class="span-text">CODE . </span>
+          <span class="span-text"> COMMIT . </span><span class="span-text">SEEK </span>
+        </p>
+      </div>
+      <div class="time-detail">
+        <p>5th <span class="time-text">to 8th August</span></p>
+      </div>
+      <div class="buttons">
+        <button class="btn">APPLY NOW</button>
+      </div>
+    </main>
+  </div>
+  <!-- Homepage Ends -->
+
   <!-- Timer Begins -->
   <div id="time">
-    <div class="circle" style="--clr:#ff2972;">
+    <div class="circle">
       <svg>
         <circle cx="70" cy="70" r="70"></circle>
         <circle cx="70" cy="70" r="70" id="dd"></circle>
       </svg>
-      <div id="days">
+      <div class="time-date" id="days">
         00
       </div>
     </div>
 
-    <div class="circle" style="--clr:#ff2972;">
+    <div class="circle">
       <svg>
         <circle cx="70" cy="70" r="70"></circle>
         <circle cx="70" cy="70" r="70" id="hh"></circle>
       </svg>
-      <div id="hours">
+      <div class="time-date" id="hours">
         00
       </div>
     </div>
 
-    <div class="circle" style="--clr:#ff2972;">
+    <div class="circle">
       <svg>
         <circle cx="70" cy="70" r="70"></circle>
         <circle cx="70" cy="70" r="70" id="mm"></circle>
       </svg>
-      <div id="minutes">
+      <div class="time-date" id="minutes">
         00
       </div>
     </div>
 
-    <div class="circle" style="--clr:#ff2972;">
+    <div class="circle">
       <svg>
         <circle cx="70" cy="70" r="70"></circle>
         <circle cx="70" cy="70" r="70" id="ss"></circle>
       </svg>
-      <div id="seconds">
+      <div class="time-date" id="seconds">
         00
       </div>
     </div>
@@ -175,6 +238,7 @@
   </div>
   <!-- Sponsorship section Ends -->
 </body>
+<script src="js/navbar.js"></script>
 <script src="js/timer.js"></script>
 
 </html>

@@ -1,37 +1,36 @@
 #time {
     display: flex;
-    gap: 50px;
+    margin: 2% auto;
+    justify-content: space-around;
 }
 
-#time.circle {
+#time .circle {
     position: relative;
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    --clr: red;
 
 }
 
-#time div {
-    position: relative;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.5em;
-}
-
-#time .circle div {
+#time .circle .text-date {
     color: white;
     position: absolute;
-    top: 53px;
-    left: 58px;
+    left: -100px;
 }
 
-#time.circle svg {
+#time .circle .time-date {
+    color: white;
+    position: absolute;
+}
+
+#time .circle svg {
     position: relative;
     width: 150px;
     width: 150px;
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
 }
 
 #time .circle svg circle {
