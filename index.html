@@ -39,9 +39,10 @@
   <link href="css\style.css" rel="stylesheet" type="text/css" />
   <link href="css\background.css" rel="stylesheet" type="text/css" />
   <link href="css\home.css" rel="stylesheet" type="text/css" />
+  <link href="css\timer.css" rel="stylesheet" type="text/css" />
   <link href="css\about_us.css" rel="stylesheet" type="text/css" />
   <link href="css\sponsors.css" rel="stylesheet" type="text/css" />
-  <link href="css\timer.css" rel="stylesheet" type="text/css" />
+  <link href="css\contact.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -244,8 +245,85 @@
     </div>
   </div>
   <!-- Sponsorship section Ends -->
+
+  <!-- Contact section Begins -->
+  <div class="container contact">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Want to get in touch? We'd love to hear from you. Here's how you can reach us...
+        </p>
+  
+        <div class="info">
+          <div class="information">
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Vellore Tamil Nadu</li>
+            </ul>
+          </div>
+          <div class="information">
+            <ul>
+              <li><i class="fas fa-envelope"></i> contact@blogophilicpanda.com</li>
+            </ul>            
+          </div>
+          <div class="information">
+            <ul>
+              <li><i class="fas fa-mobile-alt"></i> +9475661228</li>
+            </ul>            
+          </div>
+        </div>
+  
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <form id="contactForm">
+        <span id="circle one"></span>
+        <span id="circle two"></span>
+          <h3 id="title-contact">Contact us</h3>
+          <div class="alert">Your message sent</div>
+          <div id="input-container">
+            <input type="text" placeholder="Name" name="name" id="name" />
+       
+          </div>
+          <div id="input-container">
+            <input type="email" name="email" placeholder="email" id="emailid" />
+         
+          </div>
+          <div id="input-container">
+            <input type="tel" name="phone" id="phone" placeholder= "phone"  />
+          
+          </div>
+          <div id="input-container textarea">
+            <textarea name="message"  id="msgContent" placeholder="Message" rows="5"></textarea>
+          </div>
+          <div class="inputBox">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Contact section Ends -->
+
 </body>
 <script src="js/navbar.js"></script>
 <script src="js/timer.js"></script>
+<script src="js/contact.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
 </html>
